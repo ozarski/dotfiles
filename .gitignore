@@ -1,0 +1,20 @@
+# System files
+.DS_Store
+*~
+Thumbs.db
+
+# Vim/Nvim temporary files
+*.swp
+*.swo
+*.undo
+*.log
+
+# Editor/IDE artifacts
+.idea/
+.vscode/
+
+# This ignores ALL .git directories except the root one
+.git/
+!.git
+**/.git/
+**/.github/
