@@ -293,3 +293,6 @@ for_window [class="^.*"] border pixel 2
 
 gaps inner 5
 gaps outer 1
+
+# bind print screen to flameshot
+bindsym Print exec "flameshot gui"
