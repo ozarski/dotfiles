@@ -277,7 +277,7 @@ bar {
 
 exec --no-startup-id feh --no-fehbg --bg-fill '/home/wojtek/Pictures/wallpaper1.jpg'
 # transparency with picom compositor
-exec_always --no-startup-id picom -f -c ~/.config/i3/picom.conf
+exec_always --no-startup-id picom --config ~/.config/i3/picom.conf
 
 # Color shemes for windows 
 set $bgcolor    #842502C9
