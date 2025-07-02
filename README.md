@@ -29,6 +29,10 @@ dotfiles/
 │ │   └── kanata.kbd
 | ├── .kanata/
 │ │ └── kanata
+├── alacritty/
+| └── .config/
+│   └── alacritty/
+│     └── alacritty.toml
 ```
 
 ## Installation
@@ -43,6 +47,8 @@ dotfiles/
    stow i3
    stow nvim
    stow rofi
+   stow kanata
+   stow alacritty
    ```
 3. Dependencies
     - i3: i3-wm, i3status, picom, i3lock

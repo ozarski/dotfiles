@@ -171,7 +171,7 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $web "1: 󰖟 Brave "
 set $terminal "2:  Terminal"
-set $android "3:  Android"
+set $android "3:  Code"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
