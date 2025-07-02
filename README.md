@@ -23,6 +23,12 @@ dotfiles/
 | └── .config/
 │   └── rofi/
 │     └── config.rasi
+├── kanata/
+| ├── .config/
+│ │ └── kanata/
+│ │   └── kanata.kbd
+| ├── .kanata/
+│ │ └── kanata
 ```
 
 ## Installation
