@@ -1,0 +1,59 @@
+(defcfg
+	process-unmapped-keys yes
+)
+
+(defsrc
+	a s d f
+	j k l ;
+	spc
+	h
+	caps
+	u
+	m
+	n
+	q w e r t
+	ralt
+)
+
+(defvar
+	tap-time 200
+	hold-time 200
+)
+
+(defvirtualkeys
+  ctl (multi (release-key lctl) (release-key rctl) (release-key ralt) )
+)
+
+(defalias
+	a-mod (tap-hold $tap-time $hold-time a lmet)
+	s-mod (tap-hold $tap-time $hold-time s lalt)
+	d-mod (tap-hold $tap-time $hold-time d lsft)
+	f-mod (tap-hold $tap-time $hold-time f lctl)
+	j-mod (tap-hold $tap-time $hold-time j rctl)
+	k-mod (tap-hold $tap-time $hold-time k rsft)
+	l-mod (tap-hold $tap-time $hold-time l ralt)
+	;-mod (tap-hold $tap-time $hold-time ; rmet)
+	spc-mod (tap-hold 200 250 spc  (layer-while-held layer2))
+	undo-mod C-z
+	maximize-mod A-f
+	minimize-mod A-f
+	ralt-mod (multi (on-release tap-vkey ctl) ralt)
+)
+
+(deflayer base
+	@a-mod @s-mod @d-mod @f-mod
+	@j-mod @k-mod @l-mod @;-mod
+	@spc-mod
+	_
+	esc
+	_
+	_
+	_
+	_ _ _ _ _
+	@ralt-mod
+)
+
+(deflayer layer2 
+	_ _ _ _ down up right _ _ left esc @undo-mod @maximize-mod @minimize-mod 
+	_ _ _ _ _ @ralt-mod
+)

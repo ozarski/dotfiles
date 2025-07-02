@@ -56,3 +56,16 @@ Example:
   mv -r ~/.config/nvim ~/dotfiles/nvim/.config
   stow nvim
   ```
+## Kanata groups setup
+To allow for non-sudo running of kanata:
+  ```bash
+  sudo groupadd uinput
+  sudo usermod -aG input $USER
+  sudo usermod -aG uinput $USER
+  stow nvim
+  ```
+Add the following text to /etc/udev/rules.d/kanata.rules:
+    ```bash
+    KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"
+    ```
+Reboot to apply changes.
