@@ -294,6 +294,8 @@ client.urgent           $u-bgcolor      $u-bgcolor      $text           $bgcolor
 
 for_window [class="^.*"] border pixel 2
 
+bindsym $mod+Ctrl+t exec --no-startup-id ~/.config/i3/kanata_toggle.sh
+
 gaps inner 5
 gaps outer 1
 
