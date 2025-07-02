@@ -55,5 +55,5 @@
 
 (deflayer layer2 
 	_ _ _ _ down up right _ _ left esc @undo-mod @maximize-mod @minimize-mod 
-	_ _ _ _ _ @ralt-mod
+	A-1 A-2 A-3 A-4 A-5 @ralt-mod
 )

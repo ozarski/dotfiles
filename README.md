@@ -71,7 +71,9 @@ To allow for non-sudo running of kanata:
   stow nvim
   ```
 Add the following text to /etc/udev/rules.d/kanata.rules:
+
     ```bash
     KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"
     ```
+
 Reboot to apply changes.
