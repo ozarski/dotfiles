@@ -4,6 +4,9 @@ opacity = 0.9
 padding.x = 10
 padding.y = 10
 
+[font]
+size = 10.0
+
 [[keyboard.bindings]]
 key = "Back"
 mods = "Control"
